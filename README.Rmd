@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# exactsim5361
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of exactsim5361 is to generate simulations from the exponential 
+distribution using the inverse method.
+
+## Installation
+
+You can install the development version of exactsim5361 like so:
+
+```{r}
+remote::install_github("exactsim5361")
+```
+
+## Example
+
+This is a basic example which shows you how to use the simexp function to simulate
+1000 from an exponential distribution with parameter lambda equal to 3:
+
+```{r example}
+library(exactsim5361)
+## basic example code
+simexp(n = 1000, lam = 3, seed = 12345)
+```
+

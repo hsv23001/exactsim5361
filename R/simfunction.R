@@ -10,8 +10,8 @@
 # seed = set seed
 # x = vector that will keep the n sample values
 
-library(ggplot2)
-library(tidyverse)
+@import ggplot2
+@import tidvyerse
 
 simexp <- function(n, lam, seed = 1) {
   result <- list()

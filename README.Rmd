@@ -25,7 +25,7 @@ distribution using the inverse method.
 You can install the development version of exactsim5361 like so:
 
 ```{r}
-remote::install_github("exactsim5361")
+remotes::install_github(repo = "https://github.com/hsv23001/exactsim5361")
 ```
 
 ## Example

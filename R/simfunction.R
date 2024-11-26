@@ -9,6 +9,10 @@
 # n = sample size
 # seed = set seed
 # x = vector that will keep the n sample values
+
+library(ggplot2)
+library(tidyverse)
+
 simexp <- function(n, lam, seed = 1) {
   result <- list()
   # fixing the random seed for reproducibility

@@ -23,7 +23,7 @@ simexp <- function(n, lam, seed = 1) {
     result$x = c(result$x, -log(u)/lam)
   }
 
-  result$plot <- data.frame(xvar = result$x) %>% ggplot(aes(xvar)) +
+  result$plot <- data.frame(xvar = result$x) %>% ggplot2::ggplot(aes(xvar)) +
     geom_histogram(aes(y = ..density..), bins = 50) + xlim(0, NA) +
     stat_function(fun = function(x) dexp(x,lam), color = "red") +
     ggtitle(paste0("Exp(", lam, ")")) + geom_rug()
